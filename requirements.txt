@@ -1,0 +1,3 @@
+dajngo
+django-celery-beat
+reportlab
