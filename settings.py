@@ -115,7 +115,7 @@ USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)
@@ -133,6 +133,6 @@ CELERY_TASK_SERIALIZER = 'json'
 CELERY_BEAT_SCHEDULE = {
   'send-pdfs': {
     'task': 'apps.pdfservice.tasks.send_pdfs',
-    'schedule': crontab(minute=5)
+    'schedule': crontab()
   }
 }
